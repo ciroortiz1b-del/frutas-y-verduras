@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Catálogo — Frutas y Verduras Congeladas</title>
+  <meta name="description" content="Catálogo de productos congelados con imágenes representativas." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-hero">
+    <div class="container">
+      <h1>Catálogo de productos</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <img src="fotos/5928211e-5fc7-4a07-a2d9-6d15d7ffa442.jpg" alt="Imagen principal del catálogo" style="max-width:600px;width:100%;height:auto;display:block;margin:0 auto 1rem;">
+        <div style="display:flex;gap:0.5rem;justify-content:center;flex-wrap:wrap;">
+          <img src="fotos/01373996-9d3b-4a6a-84a6-8a9731dd27e7.jpg" alt="Imagen secundaria 1" style="max-width:280px;width:100%;height:auto;">
+          <img src="fotos/c3e509db-b992-4aae-9e5e-c75127378ad3.jpg" alt="Imagen secundaria 2" style="max-width:280px;width:100%;height:auto;">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Frutas y Verduras Congeladas</div>
+  </footer>
+
+  <script>
+    document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
+  </script>
+</body>
+</html>
